@@ -1,0 +1,62 @@
+.container-fluid{
+background: #ffffff;
+}
+.item {
+text-align: center;
+border: 1px;
+background: #fafafa;
+width: 70px;
+height: 60px;
+}
+.type {
+width: 130px;
+height: 120px;
+}
+#div1{
+background: #CFCFCF;
+width:820px;
+}
+#p1{
+display:inline-block;
+width:465px;
+margin-left: 125px
+}
+.table1{
+height: 610px;
+/*width: 820px;*/
+float: left;
+}
+.table2{
+width: 783px;
+text-align:center;
+margin-bottom: 0px;
+}
+#div2{
+overflow:auto;
+height: 500px;
+width: 800px;
+}
+.trname{
+height: 80px;
+}
+#div3{
+float:left;
+/*width:300px;*/
+height: 610px;
+overflow:auto;
+}
+.div4{
+overflow:auto;
+height: 500px;
+width: 800px;
+}
+#div3 .tabbable table td:hover{
+	background-color:#4D90FE;
+	cursor:pointer;
+	color:#fff;
+}
+#pat table td:hover{
+	background-color:#4D90FE;
+	cursor:pointer;
+	color: #fff;
+}

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>麻醉记录单</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+	<!--头部-->
+    <header class='navbar navbar-default'>
+        <ul class='clearfix navbar-header'>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>麻醉开始</div><div class='myMark'>09:00</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>手术开始</div><div class='myMark'>09:10</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>手术结束</div><div class='myMark'>10:00</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>麻醉结束</div><div class='myMark'>10:10</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>病人信息</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>用药记录</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>液体记录</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>检验事件</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>事件记录</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>人员更换</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>安全检查</div></li>
+            <li data-toggle="modal" data-target="#myModal"><div class='tit'>出手术间</div></li>
+        </ul>
+    </header>
+
+    <!--内容-->
+    <main class='container-fluid'>
+    	<header id='rep_header' class='row'>
+    		<div id='rep_h_tit'>
+        		<h1>医院名称</h1>
+        		<h2>麻醉记录单</h2>
+        	</div>
+        	<div id='rep_h_pid1'>
+        		<p>页码：第<span id='pageNum'>1</span>页/共<span id='pageCount'>2</span>页</p>
+        		<p>麻醉编号：<span id='anNum'>CSXXXXXXXX</span></p>
+        		<p>病历号：<span id='medNum'>XXXXXX</span></p>
+        	</div>
+        	<div id='rep_h_pid2'>
+        		<p>科别：<span id='dep'>耳鼻喉科</span></p>
+        		<p>病区：<span id='enArea'>血液科病区</span></p>
+        		<p>床号：<span id='bedNum'>4411</span></p>
+        	</div>
+    	</header>
+    	<article id='rep_art1' class='row'>
+    		<div id='patientInfo'>
+                <label>姓名<input type='text' id='name' value='张三' readonly></label>
+                <label>性别<input type='text' id='sex' class="w50" value='男' readonly></label>
+                <label>年龄<input type='text' id='age' class="w50" value='100' readonly>岁</label>
+                <label>血型<input type='text' id='abo' class="w50" value='AB+' readonly></label>
+                <label>身高<input type='text' id='height' class="w50" value='168' readonly>cm</label>
+                <label>体重<input type='text' id='weight' class="w50" value='45' readonly>kg</label>
+                <label>住院号<input type='text' id='adNum' value='447711' readonly></label>
+	    		<label>日期<input type='date' id='dataY' class="w145" value='' readonly></label>
+                <label>
+                    ASA分级<input type='text' id='asa' value='4' readonly>
+                    <input type="checkbox" name='fenji' id='jz'/>急诊
+                    <input type="checkbox" name='fenji' id='zq' class='marLeft' />择期
+                </label>
+                <label>术前禁食（<input type="checkbox" name='jinshi' id='y'/>是<input type="checkbox" name='jinshi' id='n' class='marLeft'/>否）</label>
+                <label class='clearRight'>麻醉方法<input type='text' id='anMethod' class='w400' value='蛛网膜下腔阻滞麻醉，硬膜外阻滞麻醉' readonly></label>
+    		</div>
+    		<div id='firstVisit'>
+    			<label>
+                    <span class="leftTit">术前诊断</span>
+                    <div class="rightTxt"><input type='text' id='visit' value='垂头仰卧位' readonly></div>
+                </label>
+    			<label>
+                    <span class="leftTit">拟施手术</span>
+                    <div class="rightTxt"><input type='text' id='surgery' value='垂头仰卧位' readonly></div>
+                </label>
+    			<label>
+                    <span class="leftTit">麻醉前用药</span>
+                    <div class="rightTxt"><input type='text' id='drugs' value='垂头仰卧位' readonly></div>
+                </label>
+    			<label>
+                    <span class="leftTit">手术时体位</span>
+                    <div class="rightTxt"><input type='text' id='position' value='垂头仰卧位+左肾切' readonly></div>
+                </label>
+    		</div>
+    		<div id='exCase'>
+                <div>
+                    <label>术前特殊情况：</label>
+                    <textarea name="" id="ex" readonly>sdfsdfsddddddddddddddddddddddddddddddddddddddddddd</textarea>
+                </div>
+    		</div>
+    	</article>
+    	<article id='rep_art2' class='row'>
+            <!-- 头部 -->
+            <div id='art2_div1'>
+                <div class='tit txt_cor leftWarp'>时间（分钟）</div>
+                <div class='tit txt_cor rightWarp'>总量</div>
+                <div id='timeTit' class='clearfix middleWarp'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- 用药及输液情况 -->
+            <div id='art2_div2'>
+                <div class='leftWarp'>
+                    <div id='tcn' class='vTit'>用药及输液情况</div>
+                    <div id='tcnWarp'>
+                        <div id='tcnItem'>
+                            <div>盐酸氨溴索口服液</div>
+                            <div>克霉唑阴道片</div>
+                            <div>注射用奥美拉唑钠</div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id='phyWarp'>
+                            <div id='phy' class='txt_cor'>治疗用药</div>
+                            <div id='phyBox'>
+                                <div id='inf' class='vTit'>输液</div>
+                                <div id='phyItem'>
+                                    <div>腹膜透析液(乳酸盐) </div>
+                                    <div>代血浆 </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div class='txt_cor'>输血（AB+）</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='rightWarp'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class='middleWarp'>
+                    <!-- 用药输液情况监测 -->
+                    <div class='canWarp'><canvas id='can1'></canvas></div>
+                </div>
+            </div>
+            <!-- 出量 -->
+            <div id='art2_div3'>
+                <div class='leftWarp'>
+                    <div id='output' class='vTit'>出量</div>
+                    <div id='outputWarp'>
+                        <div>尿量</div>
+                        <div>失血量</div>
+                    </div>
+                </div>
+                <div class='rightWarp'>
+                    <div>56.0ml</div>
+                    <div>262.0ml</div>
+                </div>
+                <div class='middleWarp'>
+                    <div class='canWarp'><canvas id='can2'></canvas></div>
+                </div>
+            </div>
+            <!-- 术中监测 -->
+            <div id='art2_div4'>
+                <div class='leftWarp'>
+                    <div id='monitor' class='vTit'>术中监测</div>
+                        <div id='oxy'>
+                            <div>脉搏氧饱和度</div>
+                            <div>吸入痒浓度</div>
+                            <div> 呼末二氧化碳</div>
+                        </div>
+                        <div id='monVal'>
+                            <div>P/BP/R</div>
+                            <div>280</div>
+                            <div>260</div>
+                            <div>240</div>
+                            <div>220</div>
+                            <div>200</div>
+                            <div>180</div>
+                            <div>160</div>
+                            <div>140</div>
+                            <div>120</div>
+                            <div>100</div>
+                            <div>80</div>
+                            <div>60</div>
+                            <div>40</div>
+                            <div>20</div>
+                            <div>00</div>
+                        </div>
+                        <div id='monName'>
+                            <div>血压<i class='dot dotcolor0'></i></div>
+                            <div>脉博<i class='dot dotcolor1'></i></div>
+                            <div>呼吸<i class='dot dotcolor2'></i></div>
+                            <div>辅助呼吸<i class='dot dotcolor3'></i></div>
+                            <div>控制呼吸<i class='dot dotcolor4'></i></div>
+                            <div>体温<i class='dot dotcolor5'></i></div>
+                            <div>潮气量<i class='dot dotcolor6'></i></div>
+                            <div>插管<i class='dot dotcolor7'></i></div>
+                            <div>拔管<i class='dot dotcolor8'></i></div>
+                            <div>麻醉诱导<i class='dot dotcolor9'></i></div>
+                            <div>麻醉始终<i class='dot dotcolor10'></i></div>
+                            <div>手术开始<i class='dot dotcolor11'></i></div>
+                            <div>手术结束<i class='dot dotcolor12'></i></div>
+                            <div>平均动脉压<i class='dot dotcolor13'></i></div>
+                            <div>中心静脉压<i class='dot dotcolor14'></i></div>
+                            <div>麻醉深度<i class='dot dotcolor15'></i></div>
+                        </div>
+                </div>
+                <div class='rightWarp'>
+                    <div><span></span><span></span></div>
+                    <div><span></span><span></span></div>
+                    <div><span></span><span></span></div>
+                    <div><span>℃</span><span>ML</span></div>
+                    <div><span>40</span><span>1000</span></div>
+                    <div><span>38</span><span>800</span></div>
+                    <div><span>36</span><span>600</span></div>
+                    <div><span>34</span><span>400</span></div>
+                    <div><span>32</span><span>200</span></div>
+                    <div><span>30</span><span>cmH2O</span></div>
+                    <div><span>28</span><span>32</span></div>
+                    <div><span>26</span><span>28</span></div>
+                    <div><span>24</span><span>24</span></div>
+                    <div><span>22</span><span>20</span></div>
+                    <div><span>20</span><span>16</span></div>
+                    <div><span>18</span><span>12</span></div>
+                    <div><span>16</span><span>08</span></div>
+                    <div><span>14</span><span>04</span></div>
+                    <div><span>12</span><span>00</span></div>
+                </div>
+                <!-- 术中监测折线图 -->
+                <div class='middleWarp'>
+                    <div class='canWarp'><canvas id='can3'></canvas></div>
+                    <div class='canWarp'><canvas id='can4'></canvas></div>
+                </div>
+            </div>
+    	</article>
+    	<article id='rep_art3' class='row'>
+            <div id='ps' class='vTit'>备注</div>
+            <div id='rep_art3_right' class='row'>
+                <div id='ps1' class='col-sm-3'>
+                    <p>----------------------输液--------------------</p>
+                </div>
+                <div id='ps2' class='col-sm-3'>
+                    <p>I2、14:53 腹膜透析液(乳酸盐)(2.5%:230.0 ml</p>
+                </div>
+                <div id='ps3' class='col-sm-3'></div>
+                <div id='ps4' class='col-sm-3'>
+                    <p>入量</p>
+                    <p>红细胞：<span id=''>000</span></p>
+                    <p>成分输血：<span>000</span></p>
+                </div>
+            </div>
+    	</article>
+    	<article id='rep_art4' class='row'>
+    		<div id="summary">
+    			<label><span class="leftTit">麻醉小结：</span><div class="rightTxt"><input type='text' id='conclusion' value='' readonly></div></label>
+    		</div>
+    		<div>
+                <label>术后镇痛：①<input type='text' id='analgesia' value="无" readonly></label>
+                <label>②术后镇痛药：<input type='text' id='analgesic' value='镇痛药' readonly></label>
+                <label>③负荷量：<input type='text' id='payload' value='0.0ml' readonly></label>
+                <label>④背景流速：<input type='text' id='vof' value='0.0ml/b' readonly></label>
+                <label>⑤Bolus量：<input type='text' id='bolus' value='0.0ml/b' readonly></label>
+                <label>⑥锁定时间：<input type='text' id='lockTime' value='0.0min' readonly></label>
+    		</div>
+    		<div class='lrWarp'>
+                <label class='col-sm-8'>
+                    <span class="leftTit">术后诊断：</span>
+                    <div class="rightTxt"><input type='text' id='diacrisis' value='薄基底膜肾病' readonly></div>
+                </label>
+                <label class='col-sm-4'>
+                    <span class='leftTit leftTitW45'>意识：</span>
+                    <div class='rightTxtW45'><input type='text' id='sense' value='嗜睡' readonly></div>
+                </label>
+                <label class='col-sm-8'>
+                    <span class="leftTit">手术方式：</span>
+                    <div class="rightTxt"><input type='text' id='mop' value='前庭神经切断术，髂淋巴结根治性切除术' readonly></div>
+                </label>
+                <label class='col-sm-4'>
+                    <span class='leftTit leftTitW130'>咳嗽（吞咽）反射：</span>
+                    <div class='rightTxtW130'><input type='text' id='reaction' value='差' readonly></div>
+                </label>
+    		</div>
+            <div class='lrWarp'>
+                <label class='col-sm-5'>
+                    <span class="leftTit">手术医师：</span>
+                    <div class="rightTxt"><input type='text' id='doctor' value='李四（主刀）' readonly></div>
+                </label>
+                <label class='col-sm-3'>
+                    <span class="leftTit">巡视护士：</span>
+                    <div class="rightTxt"><input type='text' id='Nurse' value='王五' readonly></div>
+                </label>
+                <label class='col-sm-2'>
+                    <span class="leftTit">定向力：</span>
+                    <div class="rightTxt"><input type='text' id='dif' value='差' readonly></div>
+                </label>
+                <label class='col-sm-2'>
+                    <span class="leftTit">肌松恢复：</span>
+                    <div class="rightTxt"><input type='text' id='mrry' value='好' readonly></div>
+                </label>
+                <label class='col-sm-5'>
+                    <span class="leftTit">麻醉医师：</span>
+                    <div class="rightTxt"><input type='text' id='ant' value='麻醉师' readonly></div>
+                </label>
+                <label class='col-sm-3'>
+                    <span class="leftTit">器械护士：</span>
+                    <div class="rightTxt"><input type='text' id='ins' value='护士' readonly></div>
+                </label>
+                <label class='col-sm-4'>
+                    <span class="leftTit">病人去向：</span>
+                    <div class="rightTxt"><input type='text' id='pdion' value='ICU' readonly></div>
+                </label>
+            </div>
+    	</article>
+        
+        <div class="mypop" id="myPop">
+            <!-- <div class="dotPoint"></div> -->
+            <div class="tip_arrow arrow_left"></div>
+            <div class="tip_inner">
+                <div>时间:<span class='xDate'></span></div>
+                <div>名称:<span class='yName'></span></div>
+                <div>数值:<span class='yDate'></span></div>
+            </div>
+        </div>
+        <!-- 模态框 -->
+        <form class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 添加内容 -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关&nbsp;&nbsp;闭</button>
+                        <button type="submit" class="btn btn-primary">保&nbsp;&nbsp;存</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- 底部 -->
+    <footer class='navbar navbar-default'>
+        <ul class='clearfix navbar-footer'>
+            <li><div>心跳(次/分)</div><div>54</div><div>60-100(次/分)</div></li>
+            <li><div>脉博(次/分)</div><div>104</div><div>60-100(次/分)</div></li>
+            <li><div>血压(mmHg)</div><div>158/58</div><div>90-140mmHg</div></li>
+            <li><div>呼吸(次/分)</div><div>23</div><div>16-24(次/分)</div></li>
+            <li><div>SPO2(次)</div><div>23</div><div>16-20(次/分)</div></li>
+            <li><div>PEEP(cmH2O)</div><div>18</div><div>3-5cmH2O</div></li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/socket.io.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/report.js"></script>
+</body>
+</html>

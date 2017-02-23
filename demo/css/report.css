@@ -1,0 +1,563 @@
+.navbar-default{
+	padding: 5px; width: 100%;
+}
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+ul li{ float: left;}
+.navbar-default ul li{
+	float: left;
+	background-color: #337ab7;
+	margin: 5px;
+	padding: 10px 5px;
+	color: #fff;
+	text-align: center;
+}
+.navbar-header li{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+.navbar-header .myMark{
+	margin-top: 10px;
+}
+.navbar-footer{
+	width: 633px;
+	margin: auto;
+}
+.navbar-footer ul li{
+	text-align: center;
+	width: 105px;
+	height: 105px;
+}
+.navbar-footer ul li div:nth-child(2){
+	color: #ff3333;
+	font-size: 24px;
+	margin: 6px 0px;
+}
+/*报表头部样式*/
+#rep_header{
+	position: relative;
+}
+#rep_h_tit{
+	text-align: center;
+}
+#rep_h_pid1{
+	width: 200px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#rep_h_pid2 p{
+	display: inline-block;
+	padding-right: 30px;
+}
+article{
+	border: 2px solid #000;
+}
+article .marLeft{
+	margin-left: 10px;
+}
+label{
+	font-weight: normal;
+	padding: 5px;
+	margin: 0px;
+}
+.clearRight{
+	padding-right: 0px!important;
+}
+.paddLR{
+	padding: 0px 4px;
+}
+input{
+	padding: 0px 10px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	outline: none;
+	border-bottom: 1px dashed #000;
+	width: 80px;
+}
+input[type=checkbox], input[type=radio], input[type=time]{
+	width: auto!important;
+}
+.wAuto{ width: auto; }
+.w50{
+	width: 50px;
+}
+.w145{
+	width: 145px;
+}
+.w400{
+	width: 400px;
+}
+.w458{
+	width: 458px;
+}
+.leftTit{
+	width: 70px;
+	float: left;
+}
+.leftTitW45{
+	width: 45px;
+}
+.leftTitW85{
+	width: 85px;
+}
+.leftTitW100{
+	width: 100px;
+}
+.leftTitW126{
+	width: 126px;
+}
+.leftTitW130{
+	width: 130px;
+}
+.rightTxt{
+	margin-left: 70px;
+}
+.rightTxtW45{
+	margin-left: 45px;
+}
+.rightTxtW85{
+	margin-left: 85px;
+}
+.rightTxtW100{
+	margin-left: 110px;
+}
+.rightTxtW126{
+	margin-left: 126px;
+}
+.rightTxtW130{
+	margin-left: 130px;
+}
+.rightTxt input, .rightTxtW45 input, .rightTxtW85 input, .rightTxtW100 input, .rightTxtW126 input, .rightTxtW130 input{
+	width: 100%;
+}
+.rightTxtW179{
+	margin-left: 179px;
+}
+/*术前信息*/
+#rep_art1{
+	padding: 5px;
+	border-bottom: 0px;
+}
+#firstVisit{
+	width: 60%;
+	float: left;
+	padding-right: 10px;
+}
+#firstVisit label{
+	width: 100%;
+}
+#firstVisit label:nth-child(3){
+	width: 55%;
+	float: left;
+	margin-bottom: 0px;
+}
+#firstVisit label:nth-child(4){
+	width: 45%;
+	float: left;
+	margin-bottom: 0px;
+}
+#exCase{
+	width: 40%;
+	padding: 0px 4px;
+	float: left;
+	height: 88px;
+}
+#exCase > div{
+	border: 1px dashed #000;
+}
+#exCase p{
+	word-break: break-word;
+}
+#ex{
+	width: 100%;
+	height: 51px;
+	border: 0px;
+	outline: 0px;
+}
+/*术中数据检测*/
+#rep_art2{
+	border-bottom: 0px;
+}
+.leftWarp{
+	width: 186px;
+	float: left;
+	border-right: 2px solid #000;
+}
+.rightWarp{
+	width: 110px;
+	float: right;
+	border-left: 2px solid #000;
+}
+.middleWarp{
+	width: auto;
+	height: 100%;
+	margin-left: 186px;
+	margin-right: 110px;
+}
+.middleWarp .canWarp{
+	height: 100%;
+	position: relative;
+}
+#art2_div1 {
+	border-bottom: 2px solid #000;
+}
+#art2_div1 > div{
+	line-height: 44px;
+}
+#timeTit{
+	text-align: left;
+}
+#timeTit div{
+	width: 11.11%;
+	height: 44px;
+	border-right: 1px solid #000;
+	float: left;
+}
+#timeTit div:nth-last-child(1){
+	border-right: 0px;
+}
+.vTit{
+	width: 24px;
+	float: left;
+	border-right: 1px solid #000;
+	text-align: center;
+}
+.txt_cor{
+	text-align: center;
+	background-color: #e3e3e3;
+}
+/*医疗及输液情况*/
+.rightWarp div{
+	border-bottom: 1px solid #000;
+	height: 22px;
+}
+#art2_div2 > div{ height: 373px; }
+#art2_div4 .rightWarp span{
+	display: inline-block;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#tcnWarp,#phyItem,#outputWarp{
+	margin-left: 24px;
+	text-align: right;
+}
+#tcnItem>div,#phyItem>div,#outputWarp>div{
+	padding: 0px 4px;
+	border-bottom: 1px solid #000;
+	height: 22px;
+}
+#phyItem>div.txt_cor{
+	padding: 0px;
+}
+#phy{
+	border-bottom: 1px solid #000;
+}
+/*出量*/
+#art2_div3{
+	border-top: 2px solid #000;
+}
+#art2_div3 .middle div{
+	border-bottom: 1px solid #000;
+	height: 22px;
+}
+#art2_div4{
+	border-top: 2px solid #000;
+	min-height: 420px;
+}
+#art2_div4 .canWarp:nth-child(1){
+	height: 66px;
+}
+#art2_div4 .canWarp:nth-child(1).fs{
+	height: 198px;
+}
+#art2_div4 .canWarp:nth-child(2){
+	height: 352px;
+}
+#monName{
+	margin-left: 28px;
+	margin-right: 58px;
+}
+#monName div{
+	height: 22px;
+}
+#monName .dot{
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	border-radius: 50%;
+	float: right;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+.dotcolor0{ background-color: #00FF99; }
+.dotcolor1{ background-color: #AA0000; }
+.dotcolor2{ background-color: #0000CC; }
+.dotcolor3{ background-color: #FF3EFF; }
+.dotcolor4{ background-color: #008800; }
+.dotcolor5{ background-color: #FFFF00; }
+.dotcolor6{ background-color: #444444; }
+.dotcolor7{ background-color: #8C0044; }
+.dotcolor8{ background-color: #886600; }
+.dotcolor9{ background-color: #6A5ACD; }
+.dotcolor10{ background-color: #FF7F50; }
+.dotcolor11{ background-color: #DAA520; }
+.dotcolor12{ background-color: #006400; }
+.dotcolor13{ background-color: #3CB371; }
+.dotcolor14{ background-color: #4169E1; }
+.dotcolor15{ background-color: #00BFFF; }
+#oxy{
+	margin-left: 24px;
+}
+#oxy div{
+	height: 22px;
+	text-align: right;
+	padding: 0px 4px;
+	border-bottom: 1px solid #000;
+}
+#monVal{
+	width: 58px;
+	float: right;
+	text-align: center;
+}
+#monVal div{
+	height: 22px;
+}
+/*术后备注*/
+#rep_art3{
+	border-bottom: 0px;
+}
+#rep_art3_right{
+	padding-left: 39px;
+}
+#rep_art3_right>div{
+	border-right: 1px dashed #000;
+}
+#rep_art3_right>div:nth-last-child(1){
+	border-right: 0px;
+}
+/*术后小结*/
+.lrWarp label{
+	padding: 5px;
+	margin: 0px;
+}
+#rep_art4{
+	padding:5px;
+}
+#summary label{
+	width: 100%;
+}
+#analgesic{
+	width: 200px;
+}
+
+/*模态对话框*/
+.modal-body > div{
+	margin-bottom: 15px;
+}
+.modal-body > div:nth-last-child(1){
+	margin-bottom: 0px;
+}
+.modal-body .marLeft{
+	margin-left: 30px;
+}
+.modal-body .other{
+	padding: 0px 10px;
+	height: 24px;
+	width: auto;
+	display: initial;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-radius: 0px;
+	box-shadow: none;
+}
+label.newline{
+	margin-left: 112px!important;
+}
+#cssj .tit{
+	background-color: transparent;
+}
+.modal-body input{
+	border: 0px;
+}
+.modal-body .ico_del{
+	height: 12px;
+	width: auto;
+	margin-left: 5px;
+}
+.modal-body .tit:nth-child(1){ margin-top: 0px; }
+.modal-body .tit{
+	text-indent: 30px;
+	padding: 5px 0px;
+	background-color: #87CEEB;
+	margin-top: 15px;
+}
+.modal-body .itemWarp > div{
+	margin: 10px 0px;
+}
+.modal-body .tit img{
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.modal-body .ctxt{
+	padding-top: 8px;
+}
+.modal-body .ctxt textarea{
+	text-indent: 16px;
+	border: 0px;
+	outline: none;
+	width: 100%;
+	height: 60px;
+}
+/*用药记录*/
+#soso_yp{
+	width: 100%!important;
+}
+#yyjl input, #ytjl input, #rygh input{
+	border: 1px solid #e3e3e3;
+	padding: 2px 5px;
+	width: 235px;
+}
+#yyjl #ndWarp input[type=text]{
+	width: 168px;
+}
+#ytjl input{
+	width: 270px;
+}
+#yyjl input[type=button], #ytjl input[type=button], #rygh input[type=button]{
+	width: auto!important;
+	padding: 6px 12px;
+	border: 1px solid #eee;
+}
+#yyjl .items, #ytjl .items, #rygh .items{
+	margin-top: 5px;
+	padding: 2px 5px;
+	border: 1px solid #e3e3e3;
+	height: 374px;
+}
+#rygh .items{
+	margin-top: 0px;
+	height: 200px;
+}
+#yyjl input:focus, #ytjl input:focus{
+	border: 1px solid #99BBFF;
+}
+#yyjl .items li, #ytjl .items li, #rygh .items li{
+	margin: 5px 0px;
+	cursor: pointer;
+}
+#ytjl .items li{ float: none; }
+#yyjl .items li:hover, #ytjl .items li:hover, #rygh .items li:hover{
+	transform:translateX(10px);
+	font-weight: bold;
+}
+#yyjl .yp_detail{
+	padding-left: 0px;
+}
+#rygh .ry_detail .ryItmes span:hover{
+	background-color: #e5e5e5;
+}
+#yyjl .yp_detail > div, #ytjl .yt_detail > div, #rygh .ry_detail > div{
+	margin-bottom: 15px;
+}
+#yyjl .yp_detail > div:nth-last-child(1), #ytjl .yt_detail > div:nth-last-child(1), #rygh .ry_detail > div:nth-last-child(1){
+	margin-bottom: 0px;
+}
+#yyjl .yp_detail span, #ytjl .yt_detail span{
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+}
+.ryItmes{
+	padding: 7.5px;
+}
+.ryItmes span{
+	border: 1px solid #f3f3f3;
+	text-align: center;
+	cursor: pointer;
+	margin: 7.5px;
+	width: 78px;
+	display: inline-block;
+	line-height: 50px;
+}
+#yyjl .yp_detail .ckbox, #ytjl .yt_detail .ckbox, #rygh .ry_detail .ckbox{
+	position: relative;
+	top: 2px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+#yyjl .yp_detail select, #ytjl .yt_detail select, #rygh .ry_detail select{
+	height: 26px;
+}
+#yyjl .ypItems{
+	padding: 5px;
+	background-color: #f5f5f5;
+	min-height: 80px;
+}
+#yyjl .ypItems span{
+	padding: 5px;
+	cursor: pointer;
+}
+#yyjl .ypItems span:hover{
+	background-color: #ddd;
+}
+#sjWarp input{
+	width: 80px;
+}
+#sjWarp input:nth-child(2){
+	margin-right: 3px;
+	width: 150px;
+}
+#sjWarp div{
+	width: 70px;
+	float: right;
+	margin-right: 5px;
+}
+/*液体记录*/
+#ytjl .ytItems table{
+	margin-bottom: 0px;
+}
+#rlWarp input{
+	margin-right: 10px;
+}
+#tdWarp select{
+	margin-left: -4px;
+}
+
+.ry_detail ul li{ margin-right: 15px; }
+.ry_detail div:nth-child(1) input{ margin-left: 20px; margin-right: 6px; position: relative; top: 2px; }
+.ry_detail div:nth-child(1) input:nth-child(1){ margin-left: 0px; }
+.ry_detail div:nth-child(2){ width: 150px; margin-top: 15px; }
+
+#jysj .jyItems{ height: 623px; overflow-y: auto; }
+#jysj .depict input{ width: 100%; }
+.timeWarp{ text-align: right; }
+.timeWarp input{ width: 150px; }
+
+#sjjl .jcWarp{ padding: 7.5px; }
+#sjjl .jcWarp > div{ width: 101px; float: left; border: 1px solid #f3f3f3; margin: 7.5px; padding: 8px 2px; cursor: pointer; }
+#sjjl .jcWarp > div i{ width: 14px; display: inline-block; text-align: center; }
+#sjjl .sssjWarp .subTit{ padding: 5px 0px; }
+#sjjl .sssjWarp .subTit input{ border: 1px solid #e3e3e3; padding: 2px 5px; width: auto; margin-left: 10px; }
+#sjjl .sssjWarp .subTit input:focus{ border: 1px solid #99BBFF; }
+#sjjl .sssjWarp .subCtxt textarea{ width: 100%; height: 80px; }
+
+/*复苏记录*/
+.itemWarp1 div{ display: inline-block; padding: 5px 10px; }
+.itemWarp1 input{ top: 2px; position: relative; margin-left: 5px; }
+
+/*tip提示*/
+.mypop{ color: #fff; padding: 5px 10px; width: 191px; position: absolute; left: 50px; top: 50px; background-color: #000; display: none;}
+.mypop .dotPoint{ position: absolute; left: -15px; top: 32px; width: 6px; height: 6px; border-radius: 50%; background-color: #000; }
+.mypop .tip_arrow{ width: 10px; border-top: 5px solid transparent; border-bottom: 5px solid transparent; position: absolute; top: 30px; }
+.mypop .arrow_left{ border-right: 10px solid #000; left: -10px; }
+.mypop .arrow_right{ border-left: 10px solid #000; right: 10px; }

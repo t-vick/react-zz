@@ -1,0 +1,31 @@
+{
+  "name": "digihealth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "DiGiHealth",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "bootstrap": "^3.3.5",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-less": "^3.0.3",
+    "react-bootstrap": "^0.25.1",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "react": "^0.13.3",
+    "react-redux": "^2.1.0",
+    "react-router": "^0.13.3",
+    "redux": "^2.0.0",
+    "redux-thunk": "^0.1.0"
+  }
+}

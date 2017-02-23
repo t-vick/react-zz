@@ -1,0 +1,78 @@
+<div id="content">
+    <div class='clearfix'>                            
+        <div class="col-sm-12 tit">已使用的药品</div>
+        <div class="col-sm-12 ypItems">
+            <span>盐酸氨溴索口服液</span>
+            <span>克霉唑阴道片</span>
+            <span>注射用奥美拉唑钠</span>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-sm-4">
+            <div><input type="text" id="soso_yp"></div>
+            <ul class='items'>
+                <li>阿桔片</li>
+                <li>阿奇霉素</li>
+                <li>地西洋片</li>
+                <li>艾迪注射液</li>
+                <li>乌拉地尔</li>
+                <li>维A酸乳膏</li>
+                <li>维生素C注射液</li>
+                <li>盐酸维拉帕米针</li>
+                <li>注射用维库溴铵</li>
+                <li>注射用维生素B6</li>
+                <li>注射用鸟司他丁</li>
+                <li>注射用盐酸万古霉素</li>
+            </ul>
+        </div>
+        <div class="col-sm-8 yp_detail">
+            <div id="ypWarp">
+                <span>药品名称：</span><input type='text' value='22' class='name'>
+                <input class='ckbox' type="checkbox">持续
+            </div>
+            <div id="jlWarp">
+                <span>剂量：</span><input type='text' value=''>
+            </div>
+            <div id="ndWarp">
+                <span>浓度：</span><input type='text' value=''>
+                <select id="selt1">
+                    <option value="">摩尔</option>
+                    <option value="">摩尔1</option>
+                    <option value="">摩尔2</option>
+                    <option value="">摩尔3</option>
+                </select>
+                <input class='ckbox' type="checkbox">显示
+            </div>
+            <div id="ndWarp">
+                <span>流速：</span><input type='text' value='' readonly>
+                <select id="selt2" disabled>
+                    <option value="">l/min</option>
+                    <option value="">摩尔1</option>
+                    <option value="">摩尔2</option>
+                    <option value="">摩尔3</option>
+                </select>
+                <input class='ckbox' type="checkbox" disabled>显示
+            </div>
+            <div id="sjWarp">
+                <span>时间：</span><input type='date'><input type="time">
+                <div class='collapse'><input class='ckbox' type="checkbox">停止</div>                
+            </div>
+            <div id="ggWarp">
+                <span>规格：</span><input type='text' value='' readonly>
+            </div>
+            <div id="cjWarp">
+                <span>厂家：</span><input type='text' value='' readonly>
+            </div>
+            <div id="lyWarp">
+                <span>用药理由：</span><input type='text' value=''>
+            </div>
+            <div id="zyWarp">
+                <span>主药：</span><input type='text' value='' readonly>
+            </div>
+            <div>
+                <input class="btn btn-default" type="button" value="清除">
+                <input class="btn btn-default btnAdd" type="button" value="添加">
+            </div>
+        </div>
+    </div>
+</div>

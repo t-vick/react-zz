@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<!-- 头部 -->
+    <header class='navbar navbar-default'>
+        <ul class='clearfix navbar-header'>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>麻醉开始</div>
+            	<div class="marTop7 collapse in"><img class="size14" src="images/sz.png" alt=""><span id="mzkssj">09:00</span></div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>手术开始</div>
+            	<div class="marTop7 collapse in"><img class="size14" src="images/sz.png" alt=""><span id="sskssj">09:00</span></div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>手术结束</div>
+            	<div class="marTop7 collapse in"><img class="size14" src="images/sz.png" alt=""><span id="ssjssj">09:00</span></div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>麻醉结束</div>
+            	<div class="marTop7 collapse in"><img class="size14" src="images/sz.png" alt=""><span id="mzjssj">09:00</span></div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>病人信息</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>用药记录</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>液体记录</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>检验事件</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>事件记录</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>安全检查</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>人员更换</div>
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+            	<div class='marTop7'>出手术间</div>
+            </li>
+        </ul>
+    </header>
+    <!-- 主体 -->
+    <main class="container-fluid">
+    	<header class="row carousel mzd_header">
+    		<h1 class="yymc">医院名称</h1>
+    		<h2 class="jldmc">麻醉记录单</h2>
+    		<div class="kbWarp">
+    			<label>科别：</label><span class="marRight40 kebie">耳鼻喉科</span>
+    			<label>病区：</label><span class="marRight40 bingqu">血液科病区</span>
+    			<label>床号：</label><span class="marRight40 chuanghao">0001</span>
+    		</div>
+    		<div class="bhWarp">
+    			<div><label>页码：</label><span>第1页/共2页</span></div>
+    			<div><label>麻醉编号：</label><span>CSXXXXXXXX</span></div>
+    			<div><label>病历号：</label><span>XXXXXX</span></div>
+    		</div>
+    	</header>
+    	<article class="row mzd_brxx divInLine">
+    		<div class="marRight10">姓名：<span>小美</span></div>
+    		<div class="marRight10">性别：<span>男</span></div>
+    		<div class="marRight10">年龄：<span>23</span>岁</div>
+    		<div class="marRight10">血型：<span>AB+</span></div>
+    		<div class="marRight10">身高：<span>165</span>cm</div>
+    		<div class="marRight10">体重：<span>48</span>kg</div>
+    		<div class="marRight10">住院号：<span>zy0001</span></div>
+    		<div class="marRight10">日期：<span>2015/10/10</span></div>
+    		<div class="marRight10">ASA分级：<span>4</span><input type="text">急诊<input type="text">择期</div>
+    		<div class="marRight10">术前禁食：(<input type="text">是<input type="text">否)</div>
+    		<div class="marRight10">麻醉方法：<span>蛛网膜下腔阻滞麻醉，硬膜外阻滞麻醉</span></div>
+    	</article>
+    	<!-- 模态框 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 添加内容 -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关&nbsp;&nbsp;闭</button>
+                        <button type="button" class="btn btn-primary">保&nbsp;&nbsp;存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer class='navbar navbar-default'>
+        <ul class='clearfix navbar-footer'>
+            <li><div>心跳(次/分)</div><div>54</div><div>60-100(次/分)</div></li>
+            <li><div>脉博(次/分)</div><div>104</div><div>60-100(次/分)</div></li>
+            <li><div>血压(mmHg)</div><div>158/58</div><div>90-140mmHg</div></li>
+            <li><div>呼吸(次/分)</div><div>23</div><div>16-24(次/分)</div></li>
+            <li><div>SPO2(次)</div><div>23</div><div>16-20(次/分)</div></li>
+            <li><div>PEEP(cmH2O)</div><div>18</div><div>3-5cmH2O</div></li>
+        </ul>
+    </footer>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		// 模态框保存
+    		$('#myModal .btn-primary').on('click',function(){
+    			$('#myModal').removeClass('in').css('display','none');
+    			$('.modal-backdrop').fadeOut(function(){
+    				$('.modal-backdrop').remove();
+    				$('body').removeClass('modal-open');
+    			});
+    		});
+    	})
+    </script>
+</body>
+</html>

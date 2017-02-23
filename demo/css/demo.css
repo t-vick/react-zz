@@ -1,0 +1,30 @@
+/*公共样式*/
+ul{ list-style: none; margin: 0px; padding: 0px; }
+ul li{ float: left; text-align: center; padding: 5px; }
+h1, h2{ text-align: center; }
+img.size14{ height: 14px; width: auto; margin-top: -2px; margin-right: 5px; }
+article{ border: 2px solid #000; border-top-width: 2px; }
+article:nth-child(1){ border-top-width: 2px; }
+div{padding: 2px; margin: 5px; }
+.navbar-default ul li{
+	background-color: #337ab7;
+	display: inline-block;
+	margin: 5px;
+	color: #fff;
+}
+.navbar-default ul li div{ margin-top: 6px; }
+
+/*内外边距离*/
+.marTop7{ margin-top: 7px; }
+.marRight40{ margin-right: 40px; }
+.marRight10{ margin-right: 10px; }
+
+.navbar-header li{ width: 70px; height: 70px; cursor: pointer; }
+.navbar-footer{ width: 660px; margin: auto; }
+.navbar-footer li{ width: 100px; height: 100px; }
+.navbar-footer li div:nth-child(2){ color: #00FF00; font-size: 20px; }
+
+.mzd_header .kbWarp div{ width: 150px; float: left; }
+.mzd_header .bhWarp{ position: absolute; right: 0px; bottom: 0px; width: 200px; }
+
+.divInLine > div{ display: inline-block; float: left; }

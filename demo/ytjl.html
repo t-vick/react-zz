@@ -1,0 +1,78 @@
+<div id="content">
+    <div class='clearfix'>
+        <div class="col-sm-12 tit">已使用的药品</div>
+        <div class="ytItems">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>药品名称</th>
+                    <th>容量</th>
+                    <th>单价</th>
+                    <th>开始时间</th>
+                </tr>                  
+                <tr>
+                    <td>代血浆</td>
+                    <td>500ml</td>
+                    <td>23.00</td>
+                    <td>2015/09/10</td>
+                </tr>
+                <tr>
+                    <td>羟乙基淀粉130/0.4</td>
+                    <td>500ml</td>
+                    <td>43.00</td>
+                    <td>2015/09/10</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-sm-4">
+            <div><input type="text" id="soso_yp"></div>
+            <ul class='items'>
+                <li>代血浆</li>
+                <li>葡萄糖</li>
+                <li>复方氯化钠注射液</li>
+                <li>异体全血</li>
+                <li>成分血</li>
+                <li>血小板</li>
+                <li>失血量</li>
+                <li>尿量</li>
+                <li>胸腔引流</li>
+            </ul>
+        </div>
+        <div class="col-sm-8 yt_detail chulian">
+            <div id="ytWarp">
+                <span>液体名称：</span><input type='text' value='' class='name' readonly>
+            </div>
+            <div id="ggWarp">
+                <span>规格：</span><input type='text' value='' readonly>
+            </div>
+            <div id="cjWarp">
+                <span>厂家：</span><input type='text' value='' readonly>
+            </div>
+            <div id="djWarp">
+                <span>单价：</span><input type='text' value='' readonly>
+            </div>
+            <div id="tdWarp">
+                <span>通道：</span>
+                <select name="" id="sel1">
+                    <option value="">外周静脉通道</option>
+                    <option value="">中心静脉通道</option>
+                </select>
+            </div>
+            <div id="rlWarp">
+                <span>容量：</span><input type='text' value=''>ml
+            </div>
+            <div id="jjWarp">
+                <span>计价用量：</span><input type='text' value=''>
+            </div>
+            <div id="sjWarp">
+                <span>时间：</span><input type='date'><input type="time">              
+            </div>
+
+            <div>
+                <input class="btn btn-default" type="button" value="清除">
+                <input class="btn btn-default btnAdd" type="button" value="添加">
+            </div>
+        </div>
+    </div>
+</div>
